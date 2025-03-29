@@ -13,6 +13,8 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
 
+const accessKey = "dRVL1Q7hBf18MNsv3Ujlq9zWA-eD5qphkiWQaCmeUaQ"; // Replace with your Unsplash API key
+
 // Project interface
 interface Project {
   id: number;
@@ -33,7 +35,7 @@ const projects: Project[] = [
     image:
       "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=800&auto=format&fit=crop",
     tags: ["Javascript", "React", "Node.js"],
-    liveLink: "#",
+    liveLink: "https://clone-b7c5c.web.app/",
     githubLink: "#",
   },
   {
@@ -41,11 +43,10 @@ const projects: Project[] = [
     title: "Gemini Clone",
     description:
       "An AI-powered content generation tool that helps writers create blog posts and marketing copy.",
-    image:
-      "https://images.unsplash.com/photo-1677442135136-760c813052d1?q=80&w=800&auto=format&fit=crop",
+    image: "/assets/gemini.jpg",
     tags: ["Javascript", "React.js", "Gemini API", "CSS"],
-    liveLink: "#",
-    githubLink: "#",
+    liveLink: "https://gemini-clone-by-harsh.vercel.app/",
+    githubLink: "https://github.com/harsh-verma001/gemini-clone",
   },
   {
     id: 3,
@@ -53,18 +54,17 @@ const projects: Project[] = [
     description:
       "Interactive dashboard for business analytics with real-time data visualization and reporting.",
     image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=800&auto=format&fit=crop",
     tags: ["React", "Javascript", "Tailwind CSS"],
-    liveLink: "#",
-    githubLink: "#",
+    liveLink: "https://spotify-harsh.vercel.app/",
+    githubLink: "https://github.com/harsh-verma001/Spotify-clone",
   },
   {
     id: 4,
     title: "Chat Application",
     description:
       "A responsive chat application with real-time messaging, notifications, and content sharing.",
-    image:
-      "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=800&auto=format&fit=crop",
+    image: "/assets/chat.png",
     tags: ["React Native", "GraphQL", "AWS Amplify", "Redux"],
     liveLink: "#",
     githubLink: "#",
@@ -73,11 +73,11 @@ const projects: Project[] = [
     id: 5,
     title: "Dermanest",
     description:
-      "A comprehensive skin disease detection platform for monitoring skin wellness and early identifying of disease.",
+      "A comprehensive skin disease detection platform for monitoring skin wellness and early identifying of disease. This is a simpler and modified version of the real application.",
     image:
       "https://images.unsplash.com/photo-1550259979-ed79b48d2a30?q=80&w=800&auto=format&fit=crop",
     tags: ["React.js", "Node.js", "TailwindCSS"],
-    liveLink: "#",
+    liveLink: "https://dermanest-7eb51.web.app/",
     githubLink: "#",
   },
   {
@@ -88,8 +88,8 @@ const projects: Project[] = [
     image:
       "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=800&auto=format&fit=crop",
     tags: ["Next.js", "Framer Motion", "TypeScript", "Tailwind CSS"],
-    liveLink: "#",
-    githubLink: "#",
+    liveLink: "https://harshfolio-brown.vercel.app/",
+    githubLink: "https://github.com/harsh-verma001/Dev-Portfolio",
   },
 ];
 
