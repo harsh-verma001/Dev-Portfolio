@@ -75,7 +75,7 @@ export default function AboutSection() {
                 <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-stripe-gradient-1 to-stripe-gradient-3 opacity-20 blur"></div>
                 <Avatar className="h-48 w-48 border-2 border-stripe-gradient-1/30">
                   <AvatarImage
-                    src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=400&h=400&auto=format&fit=crop&q=8"
+                    src="/assets/image.webp"
                     alt="Developer portrait"
                   />
                   <AvatarFallback className="text-4xl bg-gradient-to-br from-stripe-gradient-1 to-stripe-gradient-3">

@@ -2,10 +2,28 @@
 
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-// import Image from "next/image";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 export default function HeroSection() {
+  const images = [
+    {
+      src: "/assets/ieee3.jpg",
+      link: "https://ieeexplore.ieee.org/document/10911694",
+    },
+    {
+      src: "/assets/chess.png",
+      link: "https://www.chess.com/member/keenkingdom",
+    },
+    {
+      src: "/assets/leetcode.png",
+      link: "https://leetcode.com/u/harsh-verma001/",
+    },
+    { src: "/assets/creative.jpg" },
+    { src: "/assets/creative2.webp" },
+    { src: "/assets/quote.png" },
+  ];
+
   return (
     <section className="relative min-h-screen flex items-center py-20 overflow-hidden">
       {/* Background elements */}
@@ -53,8 +71,8 @@ export default function HeroSection() {
               className="text-lg text-gray-300 max-w-2xl"
             >
               I craft responsive web applications where technology meets
-              creativity. Focused on building products that are fast, accessible
-              and user-friendly.
+              creativity. Focused on building products that are fast,
+              accessible, and user-friendly.
             </motion.p>
 
             <motion.div
@@ -143,19 +161,32 @@ export default function HeroSection() {
                 ></motion.div>
               </div>
 
-              <div className="mt-8 grid grid-cols-3 gap-2">
-                {[1, 2, 3, 4, 5, 6].map((item) => (
-                  <motion.div
-                    key={item}
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: 1 + item * 0.1 }}
-                    className="aspect-square rounded-md bg-gray-800/50 flex items-center justify-center"
-                  >
-                    <div className="h-8 w-8 rounded-full bg-gradient-to-br from-stripe-gradient-1/20 to-stripe-gradient-3/20"></div>
-                  </motion.div>
-                ))}
-              </div>
+              {/* Dynamic Image Grid */}
+              <motion.div className="hidden lg:block relative">
+                <div className="relative bg-card border border-gray-800 rounded-2xl p-8 shadow-xl overflow-hidden">
+                  <div className="mt-8 grid grid-cols-3 gap-4">
+                    {images.map((item, index) => (
+                      <motion.div
+                        key={index}
+                        className="aspect-square rounded-md bg-gray-800/50 flex items-center justify-center relative overflow-hidden"
+                      >
+                        <a
+                          href={item.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="w-full h-full"
+                        >
+                          <Image
+                            src={item.src}
+                            alt={`Image ${index + 1}`}
+                            fill
+                          />
+                        </a>
+                      </motion.div>
+                    ))}
+                  </div>
+                </div>
+              </motion.div>
             </div>
           </motion.div>
         </div>

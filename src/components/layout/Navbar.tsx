@@ -2,9 +2,9 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu} from "lucide-react";
+import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { motion} from "framer-motion";
+import { motion } from "framer-motion";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 const navLinks = [
@@ -49,8 +49,8 @@ export default function Navbar() {
             transition={{ duration: 0.5 }}
             className="font-bold text-xl md:text-2xl"
           >
-            <span className="gradient-text">Harsh</span>
-            <span className="text-white">Folio</span>
+            <span className="gradient-text">Harsh </span>
+            <span className="text-white">Verma</span>
           </motion.div>
         </Link>
 
@@ -77,7 +77,10 @@ export default function Navbar() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.3, delay: 0.5 }}
           >
-            <Button asChild className="bg-gradient-to-r from-stripe-gradient-1 to-stripe-gradient-3 text-white hover-glow">
+            <Button
+              asChild
+              className="bg-gradient-to-r from-stripe-gradient-1 to-stripe-gradient-3 text-white hover-glow"
+            >
               <Link href="/#contact">Let's Connect</Link>
             </Button>
           </motion.div>

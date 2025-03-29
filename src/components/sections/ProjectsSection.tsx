@@ -13,7 +13,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
 
-const accessKey = "dRVL1Q7hBf18MNsv3Ujlq9zWA-eD5qphkiWQaCmeUaQ"; // Replace with your Unsplash API key
+const accessKey = "dRVL1Q7hBf18MNsv3Ujlq9zWA-eD5qphkiWQaCmeUaQ";
 
 // Project interface
 interface Project {
