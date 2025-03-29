@@ -12,6 +12,12 @@ const timelineData = [
     description:
       "Leading front-end architecture for enterprise application with React, Node.js, and JavaScript.",
   },
+  {
+    year: "Nov 2022 - Jul 2024",
+    role: "Master of Computer Application",
+    company: "Ajay Kumar Garg Engineering College, Ghaziabad",
+    description: "Percentage: 74%",
+  },
 ];
 
 export default function AboutSection() {

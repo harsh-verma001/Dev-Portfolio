@@ -110,7 +110,14 @@ export default function HeroSection() {
             <div className="relative bg-card border border-gray-800 rounded-2xl p-8 shadow-xl overflow-hidden">
               <div className="flex items-start space-x-4">
                 <div className="h-16 w-16 rounded-full bg-gradient-to-br from-stripe-gradient-1 to-stripe-gradient-3 flex items-center justify-center">
-                  <span className="text-white text-2xl font-bold">HF</span>
+                  {/* <span className="text-white text-2xl font-bold">HF</span> */}
+                  <Image
+                    src={"/assets/image.webp"}
+                    alt="Avatar"
+                    width={75}
+                    height={75}
+                    className="rounded-full object-cover"
+                  />
                 </div>
                 <div className="space-y-1">
                   <h3 className="text-xl font-semibold text-white">
